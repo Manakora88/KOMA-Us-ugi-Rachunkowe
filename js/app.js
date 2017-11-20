@@ -10,7 +10,7 @@ $(document).ready(function() {
                 $(this).viewportChecker({
                     classToAdd: 'show-element animated ' + $(this).data('animate'),
                     classToRemove: 'hide-element',
-                    offset: '20%'
+                    offset: '10%'
                 });
             });
 

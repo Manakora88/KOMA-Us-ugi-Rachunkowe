@@ -31,7 +31,7 @@ body {
     color: #ECECEA;
 }
 
-.call-me {
+/*.call-me {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -59,7 +59,7 @@ body {
     .call-me {
         display: none;
     }
-}
+}*/
 
 /*Nagłówek*/
 header {
