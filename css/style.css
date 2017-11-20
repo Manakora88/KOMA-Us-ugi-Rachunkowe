@@ -1,0 +1,337 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    padding-top: 100px;
+}
+
+.hide-element{
+	opacity:0;
+}
+
+.show-element {
+	opacity: 1;
+}
+
+.title h2 {
+    font-size: 55px;
+    margin: 80px 0 40px 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #74AFAD;
+    text-align: center;
+}
+
+.price .title h2, .offer .title h2 {
+    color: #ECECEA;
+}
+
+.call-me {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 22;
+    cursor: pointer;
+    padding: 15px;
+    outline: 0;
+    background-color: rgba(116,175,173,.5);
+    background-image: url(https://image.flaticon.com/icons/png/512/46/46854.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    -webkit-box-shadow: 5px 5px 5px grey;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.call-me:hover {
+    background-color: rgba(116,175,173,.8);
+}
+
+@media (min-width: 768px) {
+    .call-me {
+        display: none;
+    }
+}
+
+/*Nagłówek*/
+header {
+    background-color: #ECECEA;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    box-shadow: 0 1px 5px 5px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 1px 5px 5px rgba(0,0,0,.5);
+}
+
+.navbar, .navbar-brand {
+    padding: 0;
+}
+
+.navbar-toggler {
+    position: fixed;
+    right: 30px;
+    top: 30px;
+}
+
+.navbar-toggler:hover {
+    box-shadow: 1px 1px 2px 2px rgba(0,0,0,.3);
+    -webkit-box-shadow: 1px 1px 2px 2px rgba(0,0,0,.3);
+}
+
+.logo {
+    line-height: 100px;
+    font-size: 50px;
+    padding-left: 50px;
+    background: no-repeat center center;
+    background-size: contain;
+    -o-background-size: contain;
+}
+
+nav .menu {
+    list-style-type: none;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    right: 30px;
+}
+
+nav .menu li a {
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    color: #74AFAD !important;
+}
+
+@media (max-width: 990px) {
+    nav .menu {
+        background-color: #ECECEA;
+        width: 100%;
+        right: 0;
+        box-shadow: 0px 5px 5px rgba(0,0,0,.5);
+        -webkit-box-shadow: 0px 5px 5px rgba(0,0,0,.5);
+    }
+}
+
+nav .menu li a:hover, nav .menu li a:focus{
+    color:  #558C89 !important;
+    text-shadow: 3px 3px 5px rgba(116,175,173,.7);
+}
+
+/*Sekcja "główny slajder"*/
+.main {
+    background-image: url("../img/kalk.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .main {
+        display: none;
+    }
+}
+
+.carousel-item {
+    width: 100%;
+    height: 400px;
+}
+
+.carousel-item h1, .carousel-item p  {
+    text-transform: uppercase;
+    color: #ECECEA;
+    text-shadow: 5px 5px 5px rgba(0,0,0,.7);
+
+}
+
+.carousel-item h1 {
+    font-size: 44px;
+    font-weight: 900;
+}
+
+.carousel-item p {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.carousel-item button {
+    text-transform: uppercase;
+    color: #558C89;
+    font-size: 14px;
+    padding: 3px 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #ECECEA;
+    font-weight: 700;
+    margin: 40px 0 20px 0;
+}
+
+.carousel-item button:hover {
+    box-shadow: 2px 2px 5px 0 rgba(0,0,0,.7);
+    -webkit-box-shadow: 2px 2px 5px 0 rgba(0,0,0,.7);
+}
+
+/*Sekcja "o firmie"*/
+.firm, .consult, .contact {
+    background-color: #ECECEA;
+    width: 100%;
+    padding: 70px 0;
+    font-weight: 400;
+    text-align: justify;
+    font-size: 18px;
+    color: black;
+}
+
+.part {
+    margin: 50px 0;
+}
+
+.part p {
+    margin: 40px 0 50px 0;
+    text-indent: 50px;
+}
+
+.title2, .title3 {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #558C89;
+    padding: 5px;
+    text-align: center;
+}
+
+.title2 {
+    font-size: 22px;
+}
+
+.title3 {
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.part img {
+    max-width: 50%;
+    max-height: 50%;
+    margin: 0 25%;
+}
+
+@media (max-width: 992px) {
+    .icon1, .icon2, .icon3, .icon4 {
+        display: none;
+    }
+}
+
+/* logo slider */
+.media-carousel .carousel-item {
+    width: 100%;
+    height: 150px;
+}
+
+.media-carousel img {
+    width: 150px;
+    height: 150px;
+    margin: 0 25%;
+}
+
+/*Sekcja "oferta"*/
+.offer, .price {
+    background-color: #74AFAD;
+    padding: 90px 0;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.offer p {
+    margin-bottom: 60px;
+    text-indent: 50px;
+}
+
+.offerts {
+    width: 80%;
+    height: 250px;
+    background-color: #ECECEA;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 250px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 10px 0 rgba(0,0,0,.6);
+    -webkit-box-shadow: 5px 5px 10px 0 rgba(0,0,0,.6);
+}
+
+/*Sekcja "konsultacje"*/
+.question {
+    padding: 30px 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    color: #558C89;
+}
+
+.consult p {
+    font-size: 18px;
+    text-indent: 50px;
+}
+
+.price p {
+    text-indent: 50px;
+}
+
+/*"Sekcja "kontakt"*/
+.type-data {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.data {
+    margin-bottom: 20px;
+}
+
+.data a {
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .type-data, .data {
+        text-align: center;
+    }
+    .icon5, .icon6, .icon7, .icon8 {
+        display: none;
+    }
+}
+
+.map {
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+    border: 6px solid #ECECEA;
+    box-shadow: 5px 5px 5px grey;
+    -webkit-box-shadow: 5px 5px 5px grey;
+}
+
+/*Stopka*/
+footer {
+    min-height: 150px;
+    text-align: center;
+    background-color: #74AFAD;
+    padding-top: 65px;
+}
+
+footer p span {
+    font-weight: 900;
+    font-size: 20px;
+    color: #ECECEA;
+}
