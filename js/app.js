@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     // slajder główny
             $('.carousel').carousel({
-              interval: 4000
+              interval: 5000
             })
 
     // animacje na stronie
@@ -47,6 +47,13 @@ $(document).ready(function() {
             $("#l-contact").on("click", function() {
                 $.scrollTo($("#contact"),500);
             });
+
+    // doswiadczenie - obliczanie lat
+            var teraz = new Date(); //aktualna data
+            var rok = teraz.getFullYear(); //rok z aktualnej daty
+            var rokZal = 1991;
+            var wiek = rok - rokZal;
+            $(".now").text(wiek);
 
     //logo slider
             $('#media').carousel({

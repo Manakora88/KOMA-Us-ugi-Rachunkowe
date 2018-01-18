@@ -7,6 +7,7 @@ body {
     font-size: 16px;
     font-family: "Lato", sans-serif;
     padding-top: 100px;
+    color: #141414;
 }
 
 .hide-element{
@@ -17,57 +18,54 @@ body {
 	opacity: 1;
 }
 
-.title h2 {
+.title h1 {
     font-size: 50px;
     margin: 80px 0 40px 0;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    color: #74AFAD;
+    color: #141414;
     text-align: center;
 }
 
-.price .title h2, .offer .title h2 {
-    color: #ECECEA;
+.price .title h1, .offer .title h1 {
+    color: #F84131;
 }
 
-/*.call-me {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+.call-me {
+    width: 60px;
+    height: 60px;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 22;
+    bottom: 5px;
+    right: 5px;
+    z-index: 9999;
     cursor: pointer;
-    padding: 15px;
+    padding: 10px;
     outline: 0;
-    background-color: rgba(116,175,173,.5);
+    border-radius: 50%;
+    background-color: rgba(248,65,49,.5);
     background-image: url(https://image.flaticon.com/icons/png/512/46/46854.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 50px 50px;
+    background-size: 40px 40px;
     -webkit-box-shadow: 5px 5px 5px grey;
     box-shadow: 5px 5px 5px grey;
 }
 
 .call-me:hover {
-    background-color: rgba(116,175,173,.8);
+    background-color: rgba(248,65,49,1);
 }
 
 @media (min-width: 768px) {
     .call-me {
         display: none;
     }
-}*/
+}
 
 /*Nagłówek*/
 header {
-    background-color: #ECECEA;
+    background-color: #F8F8F8;
     width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 99;
     box-shadow: 0 1px 5px 5px rgba(0,0,0,.5);
     -webkit-box-shadow: 0 1px 5px 5px rgba(0,0,0,.5);
 }
@@ -89,7 +87,7 @@ header {
 
 .logo {
     line-height: 100px;
-    font-size: 50px;
+    margin: 0 auto;
     padding-left: 50px;
     background: no-repeat center center;
     background-size: contain;
@@ -98,7 +96,7 @@ header {
 
 nav .menu {
     list-style-type: none;
-    font-size: 20px;
+    font-size: 12px;
     margin: 0;
     padding: 0;
     position: fixed;
@@ -110,12 +108,12 @@ nav .menu li a {
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     font-weight: 700;
-    color: #74AFAD !important;
+    color: #141414 !important;
 }
 
 @media (max-width: 990px) {
     nav .menu {
-        background-color: #ECECEA;
+        background-color: #F8F8F8;
         width: 100%;
         right: 0;
         box-shadow: 0px 5px 5px rgba(0,0,0,.5);
@@ -123,14 +121,13 @@ nav .menu li a {
     }
 }
 
-nav .menu li a:hover, nav .menu li a:focus{
-    color:  #558C89 !important;
-    text-shadow: 3px 3px 5px rgba(116,175,173,.7);
+nav .menu li a:hover, nav .menu li a:focus {
+    color: #F84131 !important;
 }
 
 /*Sekcja "główny slajder"*/
 .main {
-    background-image: url("../img/kalk.jpg");
+    background-image: url("../img/biuro.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -140,41 +137,40 @@ nav .menu li a:hover, nav .menu li a:focus{
     .main {
         display: none;
     }
-    .title h2 {
+    .title h1 {
         font-size: 30px;
     }
 }
 
 .carousel-item {
     width: 100%;
-    height: 400px;
+    height: 500px;
 }
 
-.carousel-item h1, .carousel-item p  {
+.carousel-item .tit, .carousel-item p  {
     text-transform: uppercase;
-    color: #ECECEA;
-    text-shadow: 5px 5px 5px rgba(0,0,0,.7);
-
+    color: #F8F8F8;
+    text-shadow: 3px 3px 3px rgba(0,0,0,.7);
 }
 
-.carousel-item h1 {
+.carousel-item .tit {
     font-size: 44px;
     font-weight: 900;
 }
 
 .carousel-item p {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 2px;
 }
 
 .carousel-item button {
     text-transform: uppercase;
-    color: #558C89;
+    color: #F84131;
     font-size: 14px;
     padding: 3px 10px;
     text-align: center;
-    border-radius: 10px;
-    background-color: #ECECEA;
+    background-color: #F8F8F8;
     font-weight: 700;
     margin: 40px 0 20px 0;
 }
@@ -186,13 +182,12 @@ nav .menu li a:hover, nav .menu li a:focus{
 
 /*Sekcja "o firmie"*/
 .firm, .consult, .contact {
-    background-color: #ECECEA;
+    background-color: #F8F8F8;
     width: 100%;
     padding: 70px 0;
     font-weight: 400;
     text-align: justify;
     font-size: 18px;
-    color: black;
 }
 
 .part {
@@ -204,27 +199,28 @@ nav .menu li a:hover, nav .menu li a:focus{
     text-indent: 50px;
 }
 
-.title2, .title3 {
+h2, h3 {
     text-transform: uppercase;
     font-weight: 900;
-    color: #558C89;
+    color: #F84131;
     padding: 5px;
     text-align: center;
 }
 
-.title2 {
+h2 {
     font-size: 22px;
 }
 
-.title3 {
+h3 {
     margin-top: 30px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .part img {
-    max-width: 50%;
-    max-height: 50%;
-    margin: 0 25%;
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 5px 5px 10px 0 rgba(0,0,0,.6);
+    -webkit-box-shadow: 5px 5px 10px 0 rgba(0,0,0,.6);
 }
 
 @media (max-width: 992px) {
@@ -247,9 +243,10 @@ nav .menu li a:hover, nav .menu li a:focus{
 
 /*Sekcja "oferta"*/
 .offer, .price {
-    background-color: #74AFAD;
+    background-color: #141414;
     padding: 90px 0;
     font-size: 18px;
+    color: #F8F8F8;
     text-align: justify;
 }
 
@@ -261,29 +258,26 @@ nav .menu li a:hover, nav .menu li a:focus{
 .offerts {
     width: 80%;
     height: 250px;
-    background-color: #ECECEA;
+    background-color: rgba(248,248,248,.8);
     text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 900;
     text-align: center;
-    line-height: 250px;
     margin: 0 auto;
+    padding-top: 110px;
+    color: #F84131;
     margin-bottom: 40px;
     box-shadow: 5px 5px 10px 0 rgba(0,0,0,.6);
     -webkit-box-shadow: 5px 5px 10px 0 rgba(0,0,0,.6);
 }
 
-/*Sekcja "konsultacje"*/
-.question {
-    padding: 30px 0;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 700;
-    font-size: 18px;
-    color: #558C89;
+.offerts:hover {
+    background-color: rgba(248,248,248,1);
 }
 
+/*Sekcja "konsultacje"*/
 .consult p {
+    padding-top: 20px;
     font-size: 18px;
     text-indent: 50px;
 }
@@ -296,6 +290,7 @@ nav .menu li a:hover, nav .menu li a:focus{
 .type-data {
     font-size: 20px;
     font-weight: 700;
+    color: #F84131;
 }
 
 .data {
@@ -303,8 +298,8 @@ nav .menu li a:hover, nav .menu li a:focus{
 }
 
 .data a {
-    color: black;
     text-decoration: none;
+    color: #141414;
 }
 
 @media (max-width: 600px) {
@@ -316,11 +311,44 @@ nav .menu li a:hover, nav .menu li a:focus{
     }
 }
 
+.red-label {
+    padding: 2px 10px;
+    color: #EEE;
+    font-weight: 700;
+    background-color: #F84131;
+    margin: 5px 0;
+}
+
+label {
+    margin-top: 20px;
+}
+
+.btn {
+    margin: 0 auto;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #EEE;
+    background-color: #F84131;
+    font-size: 16px;
+    padding: 0 10px;
+    cursor: pointer;
+    border-radius: 0%;
+}
+
+.btn:hover {
+    box-shadow: 2px 2px 5px 0 rgba(0,0,0,.7);
+    -webkit-box-shadow: 2px 2px 5px 0 rgba(0,0,0,.7);
+}
+
 .map {
     width: 100%;
     height: 400px;
     margin-top: 30px;
-    border: 6px solid #ECECEA;
+    border: 6px solid #F8F8F8;
     box-shadow: 5px 5px 5px grey;
     -webkit-box-shadow: 5px 5px 5px grey;
 }
@@ -329,12 +357,12 @@ nav .menu li a:hover, nav .menu li a:focus{
 footer {
     min-height: 150px;
     text-align: center;
-    background-color: #74AFAD;
+    background-color: #141414;;
     padding-top: 65px;
+    color: #F8F8F8;
 }
 
 footer p span {
-    font-weight: 900;
-    font-size: 20px;
-    color: #ECECEA;
+    font-weight: 700;
+    color: #F84131
 }
